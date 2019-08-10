@@ -1,5 +1,6 @@
 galaxy_info:
-  author: Kotaro Sugawara
+  author: Dzango Technologies Limited <info
+  @dango.com>
   description: Manage awscli users
   # company: your company (optional)
 
@@ -180,7 +181,7 @@ galaxy_info:
   #  - wheezy
 
   galaxy_tags:
-    - 'development'
+    - 'awscli'
     # List tags for your role here, one per line. A tag is
     # a keyword that describes and categorizes the role.
     # Users find roles by searching for tags. Be sure to

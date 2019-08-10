@@ -1,12 +1,6 @@
 ---
 # tasks file for ansible-role-awscli
 
-- name: Install python pip
-  apt:
-    name: python-pip
-    state: present
-    update_cache: yes
-
 - name: Install awscli
   pip:
     name: awscli

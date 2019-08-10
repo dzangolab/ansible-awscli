@@ -14,7 +14,7 @@ Role Variables
 --------------
 
 ```
-awscli_users: 
+awscli_users:
   # Add the user 'johnd'
   - name: johnd
     state: present
@@ -40,7 +40,7 @@ Example Playbook
 ```
 - hosts: servers
   roles:
-     - { role: kotarella1110.awscli }
+     - { role: dzangolab.awscli }
 ```
 
 License
@@ -51,4 +51,4 @@ MIT
 Author Information
 ------------------
 
-This role was created in 2016 by Kotaro Sugawara.
+Forked from `kotarella1110/awscli` role originally created in 2016 by Kotaro Sugawara.
