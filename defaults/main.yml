@@ -1,10 +1,8 @@
 ---
-# defaults file for ansible-role-awscli
-
-# Manage awscli users
+awscli_no_log: true
 awscli_users: []
 #
-# awscli_users: 
+# awscli_users:
 #   # Add the user 'johnd'
 #   - name: johnd
 #     state: present

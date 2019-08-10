@@ -25,6 +25,7 @@
     mode: 0600
   with_items: "{{ awscli_users }}"
   when: item.state is not defined or item.state == "present"
+  no_log: "{{ awscli_no_log }}"
 
 - name: Set awscli credentials
   become: yes
@@ -35,6 +36,7 @@
     mode: 0600
   with_items: "{{ awscli_users }}"
   when: item.state is not defined or item.state == "present"
+  no_log: "{{ awscli_no_log }}"
 
 - name: Remove awscli
   become: yes
