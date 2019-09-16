@@ -11,7 +11,7 @@
     path: ~/.aws
     state: directory
     mode: 0755
-    user: "{{ item.name }}"
+    owner: "{{ item.name }}"
     group: "{{ item.name }}"
   with_items: "{{ awscli_users }}"
   when: item.state is not defined or item.state == "present"
@@ -21,7 +21,7 @@
     src: config.j2
     dest: ~/.aws/config
     mode: 0600
-    user: "{{ item.name }}"
+    owner: "{{ item.name }}"
     group: "{{ item.name }}"
   with_items: "{{ awscli_users }}"
   when: item.state is not defined or item.state == "present"
@@ -32,7 +32,7 @@
     src: credentials.j2
     dest: ~/.aws/credentials
     mode: 0600
-    user: "{{ item.name }}"
+    owner: "{{ item.name }}"
     group: "{{ item.name }}"
   with_items: "{{ awscli_users }}"
   when: item.state is not defined or item.state == "present"
